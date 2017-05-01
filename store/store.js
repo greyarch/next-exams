@@ -23,7 +23,6 @@ export const reducer = (state = initialState, action) => {
 
 // ACTIONS
 export const nextQuestion = qnr => dispatch => {
-  console.log('QNR:', qnr)
   return dispatch({ type: actionTypes.NEXT_QUESTION, questionNr: qnr || 0 })
 }
 
